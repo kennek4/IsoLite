@@ -32,6 +32,6 @@ find_package(glm CONFIG REQUIRED)
 # target_include_directories(ISOLITE_LIB PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
 add_executable(ISOLITE_PROGRAM main.cpp)
-target_link_libraries(ISOLITE_PROGRAM PRIVATE ISOLITE_LIB)
+target_link_libraries(ISOLITE_PROGRAM PRIVATE LIB CORE DOCTEST)
 target_link_libraries(ISOLITE_PROGRAM PRIVATE glm::glm SDL3_image::SDL3_image
                                               SDL3::SDL3 OpenGL::OpenGL)

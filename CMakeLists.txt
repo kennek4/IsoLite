@@ -13,7 +13,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # ###### PROJECT DIRECTORIES ###################################################
 # ##############################################################################
 
-add_subdirectory(include)
+add_subdirectory(include/isolite/)
 add_subdirectory(lib/doctest)
 add_subdirectory(src)
 add_subdirectory(tests)
