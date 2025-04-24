@@ -1,5 +1,5 @@
-#ifndef ISO_OBSERVER_H
-#define ISO_OBSERVER_H
+#ifndef ISOLITE_OBSERVER_H
+#define ISOLITE_OBSERVER_H
 
 #include "events.h"
 
@@ -11,4 +11,4 @@ public:
 };
 }; // namespace IsoLite
 
-#endif // !ISO_OBSERVER_H
+#endif // !ISOLITE_OBSERVER_H
