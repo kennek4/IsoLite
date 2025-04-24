@@ -10,7 +10,8 @@ typedef enum IsoEvent {
 
 class Observer {
 public:
-  virtual ~Observer() = 0 {};
+  virtual ~Observer() {};
+  virtual void onNotify(const IsoEvent) = 0;
 };
 
 class Subject {
@@ -26,6 +27,7 @@ public:
     auto itr = std::find(_observers.begin(), _observers.end(), observer);
     if (itr != _observers.end()) { // Observer exists, we can delete pointer
       _observers.erase(itr);
+    }
   };
 
   void notifyObservers(const IsoEvent event) {
