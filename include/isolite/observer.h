@@ -10,8 +10,7 @@ typedef enum IsoEvent {
 
 class Observer {
 public:
-  virtual ~Observer() = 0;
-  virtual void onNotify(const IsoEvent event) = 0;
+  virtual ~Observer() = 0 {};
 };
 
 class Subject {
