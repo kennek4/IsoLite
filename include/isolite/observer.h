@@ -26,8 +26,7 @@ public:
   void removeObserver(Observer *observer) {
     auto itr = std::find(_observers.begin(), _observers.end(), observer);
     if (itr != _observers.end()) { // Observer exists, we can delete pointer
-      _observers.emplace_back(observer);
-    };
+      _observers.erase(itr);
   };
 
   void notifyObservers(const IsoEvent event) {
